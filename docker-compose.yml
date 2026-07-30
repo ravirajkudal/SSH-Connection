@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  server:
+    build: ./Server
+    container_name: SSH_Server
+  client: 
+    build: ./Client
+    container_name: SSH_Client
+    stdin_open: true
+    tty: true
